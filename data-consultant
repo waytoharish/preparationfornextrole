@@ -1,0 +1,47 @@
+Interview Question which need to be prepared for the Data Consultant 
+
+1. What are the key responsibilities of a Data Engineer?
+2. Explain the difference between OLTP and OLAP systems.
+3. What are ETL and ELT? When would you use one over the other?
+4. What are the common challenges in data engineering?
+5. Explain the concept of data partitioning in a data warehouse.
+6. How do you optimize a slow SQL query?
+7. What is indexing in databases? How does it improve performance?
+8. Explain different types of joins in SQL with examples.
+9. What is denormalization, and when should you use it?
+10. How do you handle duplicate records in SQL?
+11. What is Apache Spark, and how does it compare with Hadoop MapReduce?
+12. Explain the difference between Spark RDD, DataFrame, and Dataset.
+13. What is the difference between cache() and persist() in Spark?
+14. Explain Spark's shuffle operation and how to optimize it.
+15. What are the different types of transformations in Spark?
+16. Write a PySpark code to remove duplicates from a DataFrame.
+17. Write a PySpark code to calculate the moving average of a column.
+18. Write a Scala program to count the number of words in a text file using Spark.
+19. Given a PySpark DataFrame, write a function to fill missing values with the column mean.
+20. Write a PySpark program to group data by a column and calculate the sum of another column.
+21. What is the difference between partitioning and bucketing in Hive?
+22. How does Hive store data internally?
+23. What are different file formats used in Hive?
+24. Explain dynamic partitioning in Hive with an example.
+25. How does indexing work in Hive?
+26. What is Apache Airflow, and how is it used in data pipelines?
+27. Explain how to schedule a pipeline in Airflow.
+28. What are DAGs in Airflow?
+29. How would you handle a failed task in an Airflow DAG?
+30. What is backfilling in Apache Airflow?
+31. What is the difference between AWS S3 and HDFS?
+32. How does AWS Glue work, and when would you use it?
+33. Explain how AWS Lambda can be used in data processing.
+34. What is the difference between Redshift and Athena?
+35. How do you optimize an S3 data lake for faster querying?
+36. What is Apache Kafka, and how does it work?
+37. Explain the difference between Kafka Producer and Consumer.
+38. How do you ensure message ordering in Kafka?
+39. What are Kafka topics and partitions?
+40. How does Kafka handle fault tolerance?
+41. What are some common Spark performance optimization techniques?
+42. How do you optimize data storage in a data lake?
+43. Explain the role of file formats like Parquet and ORC in performance tuning.
+44. What is vectorization in Pandas and Spark, and how does it help in performance?
+45. What are best practices for optimizing SQL queries on large datasets?
