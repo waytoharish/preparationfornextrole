@@ -2,10 +2,11 @@ Interview Question which need to be prepared for the Data Consultant
 
 1. What are the key responsibilities of a Data Engineer?
 2. Explain the difference between OLTP and OLAP systems.
-OLAP (Online Analytical Processing) and OLTP (Online Transaction Processing) are both integral parts of data management, but they have different functionalities.
 
+OLAP (Online Analytical Processing) and OLTP (Online Transaction Processing) are both integral parts of data management, but they have different functionalities.
 OLTP focuses on handling large numbers of transactional operations in real time, ensuring data consistency and reliability for daily business operations.
 OLAP is designed for complex queries and data analysis, enabling businesses to derive insights from vast datasets through multidimensional analysis.
+
 3. What are ETL and ELT? When would you use one over the other?
 4. What are the common challenges in data engineering?
 5. Explain the concept of data partitioning in a data warehouse.
