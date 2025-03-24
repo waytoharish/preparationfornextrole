@@ -8,6 +8,11 @@ OLTP focuses on handling large numbers of transactional operations in real time,
 OLAP is designed for complex queries and data analysis, enabling businesses to derive insights from vast datasets through multidimensional analysis.
 
 3. What are ETL and ELT? When would you use one over the other?
+ETL (Extract, Transform, Load) and ELT (Extract, Load, Transform) are both data integration processes, but they differ in the order of operations:
+ETL transforms data before loading it into a data warehouse, while ELT loads data first and transforms it afterwards. 
+
+
+
 4. What are the common challenges in data engineering?
 5. Explain the concept of data partitioning in a data warehouse.
 6. How do you optimize a slow SQL query?
