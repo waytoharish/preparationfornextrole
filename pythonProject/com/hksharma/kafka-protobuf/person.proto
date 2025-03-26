@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+message Person {
+  int32 id = 1;
+  string firstname = 2;
+  string middlename = 3;
+  string lastname = 4;
+  int32 dob_year = 5;
+  int32 dob_month = 6;
+  string gender = 7;
+  double salary = 8;
+}
