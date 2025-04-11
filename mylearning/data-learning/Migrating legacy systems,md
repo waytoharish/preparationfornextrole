@@ -1,0 +1,37 @@
+There are seven common migration strategies when moving applications to the cloud, including:
+
+- Retain – keeping applications running as is and revisiting the migration at a later stage
+- Retire – decommissioning applications that are no longer required
+- Repurchase – switching from existing applications to a software-as-a-service (SaaS) solution
+- Rehost – moving applications as is (lift and shift), without making any changes to take advantage of cloud capabilities
+- Relocate – moving applications as is, but at a hypervisor level
+- Replatform – moving applications as is, but introduce capabilities that take advantage of cloud-native features
+- Refactor – re-architect the application to take full advantage of cloud-native features
+
+When migrating legacy systems, the primary options include: ==rehosting (lift and shift), replatforming, refactoring (rearchitecting), replacing (with a new system), retiring (discontinuing use), and retaining (keeping the legacy system as is)==, each with its own benefits and considerations depending on the specific legacy system and business needs; the best approach often involves a combination of these strategies depending on the situation. 
+
+Key points about each migration option:
+- **Rehosting (Lift and Shift):**
+    The simplest method, where the legacy application is moved to a new infrastructure (like a cloud) with minimal code changes, often used for quick migration but may not fully leverage new features. 
+- **Replatforming:**
+	Migrating the application to a new platform while maintaining the core architecture, allowing for some modernization and improved performance without major code changes. 
+    
+- **Refactoring (Rearchitecting):**
+    Significantly modifying the codebase to improve its design, scalability, and maintainability, often requiring more development effort but providing greater long-term benefits. 
+    
+- **Replacing (with a new system):**
+    Developing a completely new application to replace the legacy system, ideal when the legacy system is outdated and does not align with current business needs. 
+    
+- **Retiring:**
+    Discontinuing use of the legacy system, often when a suitable replacement is available and the old system is no longer required. 
+    
+- **Retaining:**
+    Keeping the legacy system as is, sometimes used when the system is still functional and migration is not considered a priority. 
+    
+
+Factors to consider when choosing a migration strategy:
+
+- **Complexity of the legacy system:** Highly complex systems may require more intensive approaches like refactoring. 
+- **Business needs and priorities:** Alignment with current business goals and desired functionality. 
+- **Budget and timeline:** The cost and time required for each migration strategy. 
+- **Technical feasibility:** Assessing the compatibility of the legacy system with new platforms.
