@@ -1,5 +1,5 @@
-📘 PySpark Window Functions — A Practical Learning Guide
-🚪 What Is a Window Function?
+**📘 PySpark Window Functions — A Practical Learning Guide
+🚪 What Is a Window Function?**
 A window function performs a calculation across a set of table rows that are somehow related to the current row — without collapsing the result into a single row like groupBy() does.
 
 Think of it as “grouping without reducing.”
@@ -7,10 +7,14 @@ Think of it as “grouping without reducing.”
 🧰 1. Components of a Window Function
 To use window functions in PySpark, you define a window specification using the Window class, which has three optional parts:
 
-Part	Description
-partitionBy()	Like GROUP BY (divides rows into groups)
-orderBy()	Orders rows within each partition
-rowsBetween() or rangeBetween()	Defines frame relative to current row
+| Part                 | Description                         
+|----------------------|----------------------------------|
+| partitionBy()          | Like GROUP BY (divides rows into groups)| 
+| orderBy()             | Orders rows within each partition        | 
+| rowsBetween()        | Defines frame relative to current row     | 
+| rangeBetween()       | Defines frame relative to current row     | 
+
+
 
 🧪 2. Common Window Functions
 From pyspark.sql.functions:
@@ -24,9 +28,8 @@ sum() / avg() / count()	Rolling aggregates
 first() / last()	First or last value in partition
 
 🔧 3. Simple Example — Ranking Customers by Purchase
-python
-Copy
-Edit
+```python
+
 from pyspark.sql.window import Window
 from pyspark.sql.functions import row_number
 
@@ -36,13 +39,13 @@ df.withColumn("rank_in_region", row_number().over(window_spec))
 Partitioned by region
 
 Ordered by purchase_amount
-
+```
 Assigns a rank per region
 
 📦 4. Example — Rolling 7-Day Total
-python
-Copy
-Edit
+
+```python
+
 from pyspark.sql.window import Window
 from pyspark.sql.functions import sum
 
@@ -50,13 +53,13 @@ window_spec = Window.orderBy("date").rangeBetween(-7, 0)
 
 df.withColumn("7_day_total", sum("sales").over(window_spec))
 For each row, looks at values from 7 days before to the current row
-
+```
 Computes a rolling sum
 
 ⏳ 5. Difference Between rowsBetween and rangeBetween
-Function	Works On	Use Case
-rowsBetween	Row position	E.g., previous 2 rows
-rangeBetween	Row values	E.g., last 7 days (time range)
+|Function	|Works On	Use Case |
+|rowsBetween	|Row position	E.g., previous 2 rows|
+|rangeBetween	|Row values	E.g., last 7 days (time range)|
 
 🛠 6. Practical Use Cases
 Use Case	Window Function Used
