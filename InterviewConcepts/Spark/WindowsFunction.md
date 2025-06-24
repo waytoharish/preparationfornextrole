@@ -57,9 +57,11 @@ For each row, looks at values from 7 days before to the current row
 Computes a rolling sum
 
 ⏳ 5. Difference Between rowsBetween and rangeBetween
-|Function	|Works On	Use Case |
-|rowsBetween	|Row position	E.g., previous 2 rows|
-|rangeBetween	|Row values	E.g., last 7 days (time range)|
+| Function      | Works On       | Use Case                     |
+|---------------|----------------|------------------------------|
+| `rowsBetween` | Row position   | E.g., previous 2 rows        |
+| `rangeBetween`| Row values     | E.g., last 7 days (time range) |
+
 
 🛠 6. Practical Use Cases
 Use Case	Window Function Used
