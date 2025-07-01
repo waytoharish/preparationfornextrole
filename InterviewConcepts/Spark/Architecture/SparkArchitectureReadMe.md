@@ -4,7 +4,7 @@
 2. Node Manager
 3. Application Manager
 
-```json
+```pgsql
 [ EC2 Worker Node ]
      |
      ├─ NodeManager (daemon)
@@ -17,7 +17,7 @@
 
 ## Application Manager and Node Manager 
 
-```json
+```pgsql
   +-----------------------------+
                     |     ResourceManager (RM)    |
                     |     (Global scheduler)      |
