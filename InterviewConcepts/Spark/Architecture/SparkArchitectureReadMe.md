@@ -4,6 +4,7 @@
 2. Node Manager
 3. Application Manager
 
+```json
 [ EC2 Worker Node ]
      |
      ├─ NodeManager (daemon)
@@ -12,9 +13,11 @@
      ├─ Container 2 → Spark Executor JVM
      ├─ Container 3 → ApplicationMaster (with driver, if cluster mode)
      └─ Container 4 → Spark Executor JVM
+```
 
 ## Application Manager and Node Manager 
 
+```json
   +-----------------------------+
                     |     ResourceManager (RM)    |
                     |     (Global scheduler)      |
@@ -31,6 +34,7 @@
   Starts and monitors                       Starts and monitors
   executor containers                       AM container
 
+```
 # Spark Components
 1. driver
 2. executor
