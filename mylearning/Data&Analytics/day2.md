@@ -1,119 +1,139 @@
-Contents
-Content	Type	Duration	Link	Topics covered
-Data ingestion methods	Read	1 Hour	https://docs.aws.amazon.com/whitepapers/latest/building-data-lakes/data-ingestion-methods.html	Definition of data ingestion methods in AWS
-Data Migration Services Introduction	Read	1 Hour	https://docs.aws.amazon.com/whitepapers/latest/aws-overview/migration-services.html	Definition of Data Migration Services
-Big Data 101 	Session	30 min	https://broadcast.amazon.com/videos/214210	 Big data 101
-AWS Data Migration Best Practices for Moving Data 	Session	1 Hour	https://broadcast.amazon.com/videos/855719	 AWS Services to migrate data
-AWS Glue Getting Started 	Tutorial	2 hours	https://explore.skillbuilder.aws/learn/course/8171/aws-glue-getting-started	 AWS Glue
-AWS Glue Catalog Lab 	workshop	30 Minute	https://catalog.us-east-1.prod.workshops.aws/workshops/ee59d21b-4cb8-4b3d-a629-24537cf37bb5/en-US/lab1	 AWS Glue Catalog workshop
-Apache Spark Lab 	workshop	30 Minute	https://catalog.us-east-1.prod.workshops.aws/workshops/ee59d21b-4cb8-4b3d-a629-24537cf37bb5/en-US/lab2	 Apache Spark Lab
-AWS Glue ETL Lab 	workshop	30 Minute	https://catalog.us-east-1.prod.workshops.aws/workshops/ee59d21b-4cb8-4b3d-a629-24537cf37bb5/en-US/lab3	 AWS Glue ETL Jobs
-AWS Glue ETL Jobs 	workshop	1 Hour	https://catalog.us-east-1.prod.workshops.aws/workshops/ee59d21b-4cb8-4b3d-a629-24537cf37bb5/en-US/lab6	 AWS Glue ETL Jobs
-ETL on EMR 	workshop	3 Hour	https://catalog.us-east-1.prod.workshops.aws/workshops/c86bd131-f6bf-4e8f-b798-58fd450d3c44/en-US	 Optional workshop for EMR
-AWS Glue DataBrew Immersion Day	Workshop - Optional	3 Hours	https://catalog.us-east-1.prod.workshops.aws/workshops/6532bf37-3ad2-4844-bd26-d775a31ce1fa/en-US	 AWS Glue DataBrew
+### Contents
+
+| Content                                                   | Type               | Duration  | Link                                                                                                                                  | Topics Covered                                 |
+|-----------------------------------------------------------|--------------------|-----------|---------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------|
+| Data ingestion methods                                     | Read               | 1 Hour    | [Link](https://docs.aws.amazon.com/whitepapers/latest/building-data-lakes/data-ingestion-methods.html)                              | Definition of data ingestion methods in AWS     |
+| Data Migration Services Introduction                      | Read               | 1 Hour    | [Link](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/migration-services.html)                                          | Definition of Data Migration Services           |
+| Big Data 101                                               | Session            | 30 min    | [Link](https://broadcast.amazon.com/videos/214210)                                                                                   | Big data 101                                    |
+| AWS Data Migration Best Practices for Moving Data         | Session            | 1 Hour    | [Link](https://broadcast.amazon.com/videos/855719)                                                                                   | AWS Services to migrate data                    |
+| AWS Glue Getting Started                                   | Tutorial           | 2 Hours   | [Link](https://explore.skillbuilder.aws/learn/course/8171/aws-glue-getting-started)                                                  | AWS Glue                                        |
+| AWS Glue Catalog Lab                                       | Workshop           | 30 Minute | [Link](https://catalog.us-east-1.prod.workshops.aws/workshops/ee59d21b-4cb8-4b3d-a629-24537cf37bb5/en-US/lab1)                       | AWS Glue Catalog workshop                       |
+| Apache Spark Lab                                           | Workshop           | 30 Minute | [Link](https://catalog.us-east-1.prod.workshops.aws/workshops/ee59d21b-4cb8-4b3d-a629-24537cf37bb5/en-US/lab2)                       | Apache Spark Lab                                |
+| AWS Glue ETL Lab                                           | Workshop           | 30 Minute | [Link](https://catalog.us-east-1.prod.workshops.aws/workshops/ee59d21b-4cb8-4b3d-a629-24537cf37bb5/en-US/lab3)                       | AWS Glue ETL Jobs                               |
+| AWS Glue ETL Jobs                                          | Workshop           | 1 Hour    | [Link](https://catalog.us-east-1.prod.workshops.aws/workshops/ee59d21b-4cb8-4b3d-a629-24537cf37bb5/en-US/lab6)                       | AWS Glue ETL Jobs                               |
+| ETL on EMR                                                 | Workshop           | 3 Hours   | [Link](https://catalog.us-east-1.prod.workshops.aws/workshops/c86bd131-f6bf-4e8f-b798-58fd450d3c44/en-US)                            | Optional workshop for EMR                       |
+| AWS Glue DataBrew Immersion Day                            | Workshop - Optional| 3 Hours   | [Link](https://catalog.us-east-1.prod.workshops.aws/workshops/6532bf37-3ad2-4844-bd26-d775a31ce1fa/en-US)                            | AWS Glue DataBrew                               |
 
 
 
-Day3 
+### Day 3
 
-Content	Type	Duration	Link	Topics covered
-Introduction to Streaming Data	Session	30min	https://broadcast.amazon.com/videos/217673	 Streaming Services on AWS
-Amazon Kinesis	Workshop 	3 Hours	https://catalog.us-east-1.prod.workshops.aws/workshops/2300137e-f2ac-4eb9-a4ac-3d25026b235f/en-US	 Amazon Kinesis in Details
-Amazon MSK Introduction	Read 	15 Minutes	https://docs.aws.amazon.com/msk/latest/developerguide/what-is-msk.html	 Introduction of Amazon MSK
-Amazon MSK Getting Started	Tutorial 	1 Hour 30 Minutes	https://docs.aws.amazon.com/msk/latest/developerguide/getting-started.html	 Amazon MSK tutorials
-AWS Glue Streaming	Workshop 	1 Hour	https://catalog.us-east-1.prod.workshops.aws/workshops/ee59d21b-4cb8-4b3d-a629-24537cf37bb5/en-US/lab4	 AWS Glue Streaming Jobs
-
-
-Day 4
-
-Content	Type	Duration	Link	Topics covered
-Buidling Datalake on AWS	Reinvent Talk	1 Hour	https://www.youtube.com/watch?v=V1rkjRjbzoY	 Services for building Data Lakes in AWS
-Building Transactional Data Lake using AWS Glue	Workshop	2 Hour	https://catalog.us-east-1.prod.workshops.aws/workshops/abe2f3c6-a448-4170-967e-b7656aba7c3c/en-US	 Transactional Data Lake Products
-Serverless Data Lake Framework Workshop	Workshop	3 Hours	https://catalog.us-east-1.prod.workshops.aws/workshops/501cb14c-91b3-455c-a2a9-d0a21ce68114/en-US	 Serverless Data Lake Framework Services
-Data Lake with Apache Iceberg	Workshop	2 Hours	https://catalog.us-east-1.prod.workshops.aws/workshops/51703f4d-7a7b-4e03-b633-1d147d503058/en-US	 Create a Transactional Data Lake with Apache Iceberg
-Apache Hudi data lake on AWS using Glue	Blogpost	2 Hours	https://aws.amazon.com/blogs/big-data/build-a-serverless-pipeline-to-analyze-streaming-data-using-aws-glue-apache-hudi-and-amazon-s3/	 Apache hudi with AWS Glue
-Open-source Delta Lake and AWS Glue	Blogpost	2 Hours	https://aws.amazon.com/blogs/big-data/handle-upsert-data-operations-using-open-source-delta-lake-and-aws-glue/	 AWS Glue with Deltalake
-Amazon Security Lake	Watch	2 Min	https://www.youtube.com/watch?v=j6IxULE7_4k	 AWS Security Lake
-
-Day 5
-Content	Type	Duration	Link	Topics covered
-Redshift Part-1 (Skills Builder Course, Amazon Redshift Overview)	Session	1 Hour	https://explore.skillbuilder.aws/learn/course/external/view/elearning/13655/getting-started-with-amazon-redshift	 Redshift 
-Redshift Part-2 (Skills Builder Course, Redshift BestPractices)	Session	1.5 Hour	https://explore.skillbuilder.aws/learn/course/external/view/elearning/100/best-practices-for-data-warehousing-with-amazon-redshift	 Redshift 
-Redshift Immersion Day	Workshop	2 Hour	https://catalog.workshops.aws/redshift-immersion/en-US	 Data warehousing using Redshift
-Redshift IDC Integration	Blogpost	2 Hour	https://aws.amazon.com/blogs/big-data/integrate-identity-provider-idp-with-amazon-redshift-query-editor-v2-and-sql-client-using-aws-iam-identity-center-for-seamless-single-sign-on/	 Redshift IDC Integration
-Redshift Top-10 Performance Tuning tips	Blogpost	1 Hour	https://aws.amazon.com/blogs/big-data/top-10-performance-tuning-techniques-for-amazon-redshift/	 Redshift performance tuning.
-AWS:Redshift-101 Introduction to Data Warehouse Concepts and SQL Fundamentals	Watch - Optional	2 Hours	https://knet.csod.com/ui/lms-learning-details/app/course/a6ac015e-43dc-4f73-b887-8ced6fa85415	 Redshift
-AWS:Redshift-102 Redshift Architecture	Watch - Optional	2 Hours	https://knet.csod.com/ui/lms-learning-details/app/course/c5993e8e-72b7-4820-ae3e-8867b29df2d5	 Redshift
-Redshift spectrum overview and best practices	Watch - Optional	45 Min	https://broadcast.amazon.com/videos/834973	 Redshift
-Redshift Federated Query	Watch - Optional	23 Min	https://broadcast.amazon.com/videos/834544	 Redshift
-Amazon Q for Redshift Editor	Blogpost	10 Min	https://aws.amazon.com/blogs/aws/amazon-redshift-adds-new-ai-capabilities-to-boost-efficiency-and-productivity/	 Redshift Q
-Redshift Identity Federation	Read	20 Min	https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-iam-authentication-access-control.html	 Redshift 
+| Content                         | Type      | Duration           | Link                                                                                                                            | Topics Covered                  |
+|---------------------------------|-----------|---------------------|----------------------------------------------------------------------------------------------------------------------------------|----------------------------------|
+| Introduction to Streaming Data  | Session   | 30 Minutes          | [Link](https://broadcast.amazon.com/videos/217673)                                                                              | Streaming Services on AWS       |
+| Amazon Kinesis                  | Workshop  | 3 Hours             | [Link](https://catalog.us-east-1.prod.workshops.aws/workshops/2300137e-f2ac-4eb9-a4ac-3d25026b235f/en-US)                       | Amazon Kinesis in Details       |
+| Amazon MSK Introduction         | Read      | 15 Minutes          | [Link](https://docs.aws.amazon.com/msk/latest/developerguide/what-is-msk.html)                                                  | Introduction of Amazon MSK      |
+| Amazon MSK Getting Started      | Tutorial  | 1 Hour 30 Minutes   | [Link](https://docs.aws.amazon.com/msk/latest/developerguide/getting-started.html)                                              | Amazon MSK tutorials            |
+| AWS Glue Streaming              | Workshop  | 1 Hour              | [Link](https://catalog.us-east-1.prod.workshops.aws/workshops/ee59d21b-4cb8-4b3d-a629-24537cf37bb5/en-US/lab4)                  | AWS Glue Streaming Jobs         |
 
 
-Day 6
+### Day 4
 
-Content	Type	Duration	Link	Topics covered
-MWAA Introduction	Read	30 Minutes	https://docs.aws.amazon.com/mwaa/latest/userguide/what-is-mwaa.html	 Introduction of MWAA
-Getting Started with MWAA	Tutorial	1 Hour	https://docs.aws.amazon.com/mwaa/latest/userguide/get-started.html	 Getting Started with MWAA
-AWS Step Functions Introduction	Read	30 Minutes	https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html	 Introduction about Step Functions
-Building Workflows with Amazon MWAA, AWS Step Functions	Blogpost	2 Hours	https://aws.amazon.com/blogs/big-data/building-complex-workflows-with-amazon-mwaa-aws-step-functions-aws-glue-and-amazon-emr/	 Amazon MWAA, AWS Step Functions
-Orchestration in AWS Glue	Read	1 Hour	https://docs.aws.amazon.com/glue/latest/dg/etl-jobs.html	 AWS Glue workflow
-AWS Glue with Step function	Blogpost	2 Hour	https://aws.amazon.com/blogs/compute/orchestrating-aws-glue-crawlers-using-aws-step-functions/	 AWS Glue with Step function
-Data On EKS	Blogpost	15 Min	https://aws.amazon.com/blogs/containers/introducing-data-on-eks-modernize-data-workloads-on-amazon-eks/	 Data on EKS
-
-
-Day 7
-
-Content	Type	Duration	Link	Topics covered
-LakeFormation Introduction	Read	1 hour	https://docs.aws.amazon.com/lake-formation/latest/dg/what-is-lake-formation.html	 LakeFormation
-Effective data lakes using AWS Lake Formation, Part 1	Blogpost	2 hour	https://aws.amazon.com/blogs/big-data/part-1-effective-data-lakes-using-aws-lake-formation-implementing-cell-level-and-row-level-security/	 LakeFormation
-Effective data lakes using AWS Lake Formation, Part 2	Blogpost	2 hour	https://aws.amazon.com/blogs/big-data/part-2-effective-data-lakes-using-aws-lake-formation-secure-data-lakes-with-row-level-access-control/	 LakeFormation
-Data Governance on AWS Workshop	Workshop	3 hour	https://catalog.us-east-1.prod.workshops.aws/workshops/1bf9302a-862c-4e21-9e45-c81fa055643b/en-US	 Data Governance
-Design a data mesh architecture using AWS Lake Formation and AWS Glue	Blogpost	2 hour	https://aws.amazon.com/blogs/big-data/design-a-data-mesh-architecture-using-aws-lake-formation-and-aws-glue/	 LakeFormation, Glue
-AWS Glue Security Configuration 	Read	30 Minutes	https://docs.aws.amazon.com/glue/latest/dg/console-security-configurations.html	 AWS Glue
-AWS Glue Immersion day - Lab 10: Working with AWS Glue Data Quality	Workshop - Optional	1 Hours	https://catalog.us-east-1.prod.workshops.aws/workshops/ee59d21b-4cb8-4b3d-a629-24537cf37bb5/en-US/lab12	 AWS Glue Data Quality
-AWS Glue Data Quality - Blog post series	Blogpost - Optional	1 Hour	https://aws.amazon.com/blogs/big-data/getting-started-with-aws-glue-data-quality-from-the-aws-glue-data-catalog/	 AWS Glue Data Quality
-Workshop Connecting Data Products with Amazon DataZone Workshop	Workshop - Optional	8 Hour	https://catalog.us-east-1.prod.workshops.aws/workshops/7cc9e767-10a4-46cc-a432-9b38bde2b9e5/en-US
+| Content                                           | Type           | Duration   | Link                                                                                                                             | Topics Covered                                              |
+|---------------------------------------------------|----------------|------------|----------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
+| Building Datalake on AWS                          | Reinvent Talk  | 1 Hour     | [Link](https://www.youtube.com/watch?v=V1rkjRjbzoY)                                                                              | Services for building Data Lakes in AWS                    |
+| Building Transactional Data Lake using AWS Glue   | Workshop       | 2 Hours    | [Link](https://catalog.us-east-1.prod.workshops.aws/workshops/abe2f3c6-a448-4170-967e-b7656aba7c3c/en-US)                        | Transactional Data Lake Products                           |
+| Serverless Data Lake Framework Workshop           | Workshop       | 3 Hours    | [Link](https://catalog.us-east-1.prod.workshops.aws/workshops/501cb14c-91b3-455c-a2a9-d0a21ce68114/en-US)                        | Serverless Data Lake Framework Services                    |
+| Data Lake with Apache Iceberg                     | Workshop       | 2 Hours    | [Link](https://catalog.us-east-1.prod.workshops.aws/workshops/51703f4d-7a7b-4e03-b633-1d147d503058/en-US)                        | Create a Transactional Data Lake with Apache Iceberg       |
+| Apache Hudi data lake on AWS using Glue           | Blogpost       | 2 Hours    | [Link](https://aws.amazon.com/blogs/big-data/build-a-serverless-pipeline-to-analyze-streaming-data-using-aws-glue-apache-hudi-and-amazon-s3/) | Apache Hudi with AWS Glue                                  |
+| Open-source Delta Lake and AWS Glue               | Blogpost       | 2 Hours    | [Link](https://aws.amazon.com/blogs/big-data/handle-upsert-data-operations-using-open-source-delta-lake-and-aws-glue/)           | AWS Glue with Delta Lake                                   |
+| Amazon Security Lake                              | Watch          | 2 Minutes  | [Link](https://www.youtube.com/watch?v=j6IxULE7_4k)                                                                              | AWS Security Lake                                          |
 
 
-Day 8
-What is observability and Why does it matter? – Part 1	Blogpost	30 Minutes	https://aws.amazon.com/blogs/mt/what-is-observability-and-why-does-it-matter-part-1/	 Observability Introduction
-How to develop an Observability strategy – Part 2	Blogpost	30 Minutes	https://aws.amazon.com/blogs/mt/how-to-develop-an-observability-strategy/	 Observability Strategy
-Monitoring Glue with Amazon CloudWatch	Read	1 Hours	https://docs.aws.amazon.com/glue/latest/dg/monitor-cloudwatch.html	 AWS Glue
-Monitoring Glue Jobs	Workshop	2 Hours	https://catalog.us-east-1.prod.workshops.aws/workshops/ee59d21b-4cb8-4b3d-a629-24537cf37bb5/en-US/lab7	 AWS Glue
-Monitoring Amazon Kinesis Data Streams	Read	1 Hours	https://docs.aws.amazon.com/streams/latest/dev/monitoring.html	 Amazon Kinesis, CloudWatch
-Monitoring an Amazon MSK cluster	Read	1 Hours	https://docs.aws.amazon.com/msk/latest/developerguide/monitoring.html	 Amazon MSK, CloudWatch
-Centralized Log Analytics	Read	1 Hour	https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/solution-overview.html	 Amazon OpenSearch
-Amazon Managed Grafana	Watch	5 Min	https://www.youtube.com/watch?v=ZdWm5CqOcm4&t=2s	 Amazon Managed Grafana
-Amazon Managed Prometheus	Read	20 Min	https://docs.aws.amazon.com/prometheus/latest/userguide/what-is-Amazon-Managed-Service-Prometheus.html
+### Day 5
 
-Day 9
+| Content                                                                                          | Type              | Duration   | Link                                                                                                                                                                                                                  | Topics Covered                      |
+|--------------------------------------------------------------------------------------------------|-------------------|------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
+| Redshift Part-1 (Skills Builder Course, Amazon Redshift Overview)                               | Session           | 1 Hour     | [Link](https://explore.skillbuilder.aws/learn/course/external/view/elearning/13655/getting-started-with-amazon-redshift)                                                                                            | Redshift                            |
+| Redshift Part-2 (Skills Builder Course, Redshift Best Practices)                                | Session           | 1.5 Hour   | [Link](https://explore.skillbuilder.aws/learn/course/external/view/elearning/100/best-practices-for-data-warehousing-with-amazon-redshift)                                                                           | Redshift                            |
+| Redshift Immersion Day                                                                           | Workshop          | 2 Hours    | [Link](https://catalog.workshops.aws/redshift-immersion/en-US)                                                                                                                                                        | Data warehousing using Redshift     |
+| Redshift IDC Integration                                                                         | Blogpost          | 2 Hours    | [Link](https://aws.amazon.com/blogs/big-data/integrate-identity-provider-idp-with-amazon-redshift-query-editor-v2-and-sql-client-using-aws-iam-identity-center-for-seamless-single-sign-on/)                        | Redshift IDC Integration            |
+| Redshift Top-10 Performance Tuning Tips                                                          | Blogpost          | 1 Hour     | [Link](https://aws.amazon.com/blogs/big-data/top-10-performance-tuning-techniques-for-amazon-redshift/)                                                                                                              | Redshift performance tuning         |
+| AWS:Redshift-101 Introduction to Data Warehouse Concepts and SQL Fundamentals                    | Watch - Optional  | 2 Hours    | [Link](https://knet.csod.com/ui/lms-learning-details/app/course/a6ac015e-43dc-4f73-b887-8ced6fa85415)                                                                                                                 | Redshift                            |
+| AWS:Redshift-102 Redshift Architecture                                                           | Watch - Optional  | 2 Hours    | [Link](https://knet.csod.com/ui/lms-learning-details/app/course/c5993e8e-72b7-4820-ae3e-8867b29df2d5)                                                                                                                 | Redshift                            |
+| Redshift Spectrum Overview and Best Practices                                                    | Watch - Optional  | 45 Minutes | [Link](https://broadcast.amazon.com/videos/834973)                                                                                                                                                                   | Redshift                            |
+| Redshift Federated Query                                                                         | Watch - Optional  | 23 Minutes | [Link](https://broadcast.amazon.com/videos/834544)                                                                                                                                                                   | Redshift                            |
+| Amazon Q for Redshift Editor                                                                     | Blogpost          | 10 Minutes | [Link](https://aws.amazon.com/blogs/aws/amazon-redshift-adds-new-ai-capabilities-to-boost-efficiency-and-productivity/)                                                                                              | Redshift Q                          |
+| Redshift Identity Federation                                                                     | Read              | 20 Minutes | [Link](https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-iam-authentication-access-control.html)                                                                                                             | Redshift                            |
 
-Amazon Athena (Skills builder Course	Session	10min	https://explore.skillbuilder.aws/learn/course/external/view/elearning/152/introduction-to-amazon-athena	 Athena
-Quicksight (Skills builder Course	Session	4 Hour	https://explore.skillbuilder.aws/learn/course/external/view/elearning/41/visualizing-with-quicksight	 Quicksight
-Amazon Athena Workshop	Workshop	3 Hour	https://catalog.us-east-1.prod.workshops.aws/workshops/9981f1a1-abdc-49b5-8387-cb01d238bb78/	 Athena
-Amazon QuickSight Workshop	Workshop	3 Hour	https://catalog.us-east-1.prod.workshops.aws/workshops/cd8ebba2-2ef8-431a-8f72-ca7f6761713d/en-US/	 QuickSight
-Administration for Amazon QuickSight	Read	1 Hour	https://docs.aws.amazon.com/quicksight/latest/user/qsysadmin.html
+### Day 6
 
-Day 10
+| Content                                                                 | Type      | Duration   | Link                                                                                                                                                                                                 | Topics Covered                      |
+|-------------------------------------------------------------------------|-----------|------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
+| MWAA Introduction                                                       | Read      | 30 Minutes | [Link](https://docs.aws.amazon.com/mwaa/latest/userguide/what-is-mwaa.html)                                                                                                                         | Introduction of MWAA                |
+| Getting Started with MWAA                                              | Tutorial  | 1 Hour     | [Link](https://docs.aws.amazon.com/mwaa/latest/userguide/get-started.html)                                                                                                                          | Getting Started with MWAA           |
+| AWS Step Functions Introduction                                         | Read      | 30 Minutes | [Link](https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html)                                                                                                                            | Introduction about Step Functions   |
+| Building Workflows with Amazon MWAA, AWS Step Functions                | Blogpost  | 2 Hours    | [Link](https://aws.amazon.com/blogs/big-data/building-complex-workflows-with-amazon-mwaa-aws-step-functions-aws-glue-and-amazon-emr/)                                                              | Amazon MWAA, AWS Step Functions     |
+| Orchestration in AWS Glue                                              | Read      | 1 Hour     | [Link](https://docs.aws.amazon.com/glue/latest/dg/etl-jobs.html)                                                                                                                                    | AWS Glue workflow                   |
+| AWS Glue with Step Function                                            | Blogpost  | 2 Hours    | [Link](https://aws.amazon.com/blogs/compute/orchestrating-aws-glue-crawlers-using-aws-step-functions/)                                                                                              | AWS Glue with Step function         |
+| Data On EKS                                                            | Blogpost  | 15 Minutes | [Link](https://aws.amazon.com/blogs/containers/introducing-data-on-eks-modernize-data-workloads-on-amazon-eks/)                                                                                     | Data on EKS                         |
 
-Machine Learning Introduction	Session	1 Hour	https://knet.csod.com/ui/lms-learning-details/app/material/ecb329e7-6fb1-4e8d-af07-1f513cb4a36b	 Introduction of ML
-Sagemaker Immersion Day	Workshop	4 hours	https://catalog.us-east-1.prod.workshops.aws/workshops/63069e26-921c-4ce1-9cc7-dd882ff62575/en-US	 Sagemaker
-Machine Learning (ML) and Artificial Intelligence (AI) Services	Read	2 hours	https://docs.aws.amazon.com/whitepapers/latest/aws-overview/machine-learning.html	 AWS ML and AI services
+### Day 7
 
-Day 11
+| Content                                                                 | Type                  | Duration   | Link                                                                                                                                                                                                 | Topics Covered                      |
+|-------------------------------------------------------------------------|-----------------------|------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
+| LakeFormation Introduction                                              | Read                  | 1 Hour     | [Link](https://docs.aws.amazon.com/lake-formation/latest/dg/what-is-lake-formation.html)                                                                                                            | LakeFormation                        |
+| Effective data lakes using AWS Lake Formation, Part 1                  | Blogpost              | 2 Hours    | [Link](https://aws.amazon.com/blogs/big-data/part-1-effective-data-lakes-using-aws-lake-formation-implementing-cell-level-and-row-level-security/)                                                 | LakeFormation                        |
+| Effective data lakes using AWS Lake Formation, Part 2                  | Blogpost              | 2 Hours    | [Link](https://aws.amazon.com/blogs/big-data/part-2-effective-data-lakes-using-aws-lake-formation-secure-data-lakes-with-row-level-access-control/)                                                | LakeFormation                        |
+| Data Governance on AWS Workshop                                        | Workshop              | 3 Hours    | [Link](https://catalog.us-east-1.prod.workshops.aws/workshops/1bf9302a-862c-4e21-9e45-c81fa055643b/en-US)                                                                                           | Data Governance                      |
+| Design a data mesh architecture using AWS Lake Formation and AWS Glue  | Blogpost              | 2 Hours    | [Link](https://aws.amazon.com/blogs/big-data/design-a-data-mesh-architecture-using-aws-lake-formation-and-aws-glue/)                                                                               | LakeFormation, Glue                 |
+| AWS Glue Security Configuration                                        | Read                  | 30 Minutes | [Link](https://docs.aws.amazon.com/glue/latest/dg/console-security-configurations.html)                                                                                                             | AWS Glue                            |
+| AWS Glue Immersion day - Lab 10: Working with AWS Glue Data Quality    | Workshop - Optional   | 1 Hour     | [Link](https://catalog.us-east-1.prod.workshops.aws/workshops/ee59d21b-4cb8-4b3d-a629-24537cf37bb5/en-US/lab12)                                                                                     | AWS Glue Data Quality               |
+| AWS Glue Data Quality - Blog post series                               | Blogpost - Optional   | 1 Hour     | [Link](https://aws.amazon.com/blogs/big-data/getting-started-with-aws-glue-data-quality-from-the-aws-glue-data-catalog/)                                                                           | AWS Glue Data Quality               |
+| Workshop Connecting Data Products with Amazon DataZone Workshop        | Workshop - Optional   | 8 Hours    | [Link](https://catalog.us-east-1.prod.workshops.aws/workshops/7cc9e767-10a4-46cc-a432-9b38bde2b9e5/en-US)                                                                                           | DataZone                            |
 
-How Zoom implemented streaming log ingestion and efficient GDPR deletes using Apache Hudi on Amazon EMR	Blogpost	2 Hour	https://aws.amazon.com/blogs/big-data/how-zoom-implemented-streaming-log-ingestion-and-efficient-gdpr-deletes-using-apache-hudi-on-amazon-emr/	 EMR, Apache Hudi
-How AWS Payments migrated from Redash to Amazon Redshift Query Editor v2	Blogpost	2 Hour	https://aws.amazon.com/blogs/big-data/how-aws-payments-migrated-from-redash-to-amazon-redshift-query-editor-v2/	 Amazon Redshift
-How GoDaddy built a data mesh to decentralize data ownership using AWS Lake Formation	Blogpost	2 Hour	https://aws.amazon.com/blogs/big-data/how-godaddy-built-a-data-mesh-to-decentralize-data-ownership-using-aws-lake-formation/	 AWS Lakeformation
-TrueBlue uses Amazon QuickSight to deliver more accurate pricing and grow business	Blogpost	2 Hour	https://aws.amazon.com/blogs/big-data/trueblue-uses-amazon-quicksight-to-deliver-more-accurate-pricing-and-grow-business/	 Amazon QuickSight
-Getting Started with the Industrial Data Platform on AWS	Blogpost	1 Hour	https://aws.amazon.com/blogs/industries/getting-started-with-the-industrial-data-platform-on-aws/	 AWS IoT Sitewise
+### Day 8
 
-Day 12
+| Content                                                                 | Type     | Duration    | Link                                                                                                                                                                      | Topics Covered                     |
+|-------------------------------------------------------------------------|----------|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------|
+| What is observability and Why does it matter? – Part 1                 | Blogpost | 30 Minutes  | [Link](https://aws.amazon.com/blogs/mt/what-is-observability-and-why-does-it-matter-part-1/)                                                                             | Observability Introduction         |
+| How to develop an Observability strategy – Part 2                      | Blogpost | 30 Minutes  | [Link](https://aws.amazon.com/blogs/mt/how-to-develop-an-observability-strategy/)                                                                                        | Observability Strategy             |
+| Monitoring Glue with Amazon CloudWatch                                 | Read     | 1 Hour      | [Link](https://docs.aws.amazon.com/glue/latest/dg/monitor-cloudwatch.html)                                                                                               | AWS Glue                           |
+| Monitoring Glue Jobs                                                   | Workshop | 2 Hours     | [Link](https://catalog.us-east-1.prod.workshops.aws/workshops/ee59d21b-4cb8-4b3d-a629-24537cf37bb5/en-US/lab7)                                                           | AWS Glue                           |
+| Monitoring Amazon Kinesis Data Streams                                 | Read     | 1 Hour      | [Link](https://docs.aws.amazon.com/streams/latest/dev/monitoring.html)                                                                                                   | Amazon Kinesis, CloudWatch        |
+| Monitoring an Amazon MSK cluster                                       | Read     | 1 Hour      | [Link](https://docs.aws.amazon.com/msk/latest/developerguide/monitoring.html)                                                                                            | Amazon MSK, CloudWatch            |
+| Centralized Log Analytics                                              | Read     | 1 Hour      | [Link](https://docs.aws.amazon.com/solutions/latest/centralized-logging-with-opensearch/solution-overview.html)                                                         | Amazon OpenSearch                  |
+| Amazon Managed Grafana                                                 | Watch    | 5 Minutes   | [Link](https://www.youtube.com/watch?v=ZdWm5CqOcm4&t=2s)                                                                                                                  | Amazon Managed Grafana            |
+| Amazon Managed Prometheus                                              | Read     | 20 Minutes  | [Link](https://docs.aws.amazon.com/prometheus/latest/userguide/what-is-Amazon-Managed-Service-Prometheus.html)                                                           | Amazon Managed Prometheus         |
 
-Data Lake Proserve Offerings	Watch	1 Hour	https://broadcast.amazon.com/videos/674582	 Proserve Offerings
-Data Lake Proserve Offerings	Read	2 Hour	https://confluencedc.tsd.proserve.aws.dev/pages/viewpage.action?pageId=1705460	 Proserve Offerings
-Proserve Offerings	Read	2 Hour	https://w.amazon.com/bin/view/Proserve/ANZ/ETIP/D&A 	 Proserve Offerings
-AWS data.all - Getting Started Workshop	Workshop - Optional	2 Hour	https://catalog.us-east-1.prod.workshops.aws/workshops/ab79ad6c-13fd-434a-ba44-9783ef2bd879/en-US	 Data.all
-Data.all - Overview and Architecture	Read - Optional	30 Min	https://data-dot-all.github.io/dataall/	 Data.all
-Checkride Process Overview	Watch	21 Min	https://broadcast.amazon.com/videos/714472	 Checkride Process
+
+### Day 9
+
+| Content                          | Type     | Duration | Link                                                                                                                                 | Topics Covered |
+|----------------------------------|----------|----------|--------------------------------------------------------------------------------------------------------------------------------------|----------------|
+| Amazon Athena (Skills Builder Course)      | Session  | 10 Min   | [Link](https://explore.skillbuilder.aws/learn/course/external/view/elearning/152/introduction-to-amazon-athena)                     | Athena         |
+| Quicksight (Skills Builder Course)         | Session  | 4 Hour   | [Link](https://explore.skillbuilder.aws/learn/course/external/view/elearning/41/visualizing-with-quicksight)                        | QuickSight     |
+| Amazon Athena Workshop                     | Workshop | 3 Hour   | [Link](https://catalog.us-east-1.prod.workshops.aws/workshops/9981f1a1-abdc-49b5-8387-cb01d238bb78/)                                 | Athena         |
+| Amazon QuickSight Workshop                 | Workshop | 3 Hour   | [Link](https://catalog.us-east-1.prod.workshops.aws/workshops/cd8ebba2-2ef8-431a-8f72-ca7f6761713d/en-US/)                           | QuickSight     |
+| Administration for Amazon QuickSight       | Read     | 1 Hour   | [Link](https://docs.aws.amazon.com/quicksight/latest/user/qsysadmin.html)                                                            | QuickSight     |
+
+### Day 10
+
+| Content                                          | Type     | Duration | Link                                                                                                                                      | Topics Covered              |
+|--------------------------------------------------|----------|----------|-------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
+| Machine Learning Introduction                    | Session  | 1 Hour   | [Link](https://knet.csod.com/ui/lms-learning-details/app/material/ecb329e7-6fb1-4e8d-af07-1f513cb4a36b)                                   | Introduction of ML          |
+| Sagemaker Immersion Day                          | Workshop | 4 Hours  | [Link](https://catalog.us-east-1.prod.workshops.aws/workshops/63069e26-921c-4ce1-9cc7-dd882ff62575/en-US)                                | Sagemaker                   |
+| Machine Learning (ML) and Artificial Intelligence (AI) Services | Read     | 2 Hours  | [Link](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/machine-learning.html)                                                | AWS ML and AI services      |
+
+### Day 11
+
+| Content                                                                                                          | Type     | Duration | Link                                                                                                                                           | Topics Covered              |
+|------------------------------------------------------------------------------------------------------------------|----------|----------|------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
+| How Zoom implemented streaming log ingestion and efficient GDPR deletes using Apache Hudi on Amazon EMR        | Blogpost | 2 Hours  | [Link](https://aws.amazon.com/blogs/big-data/how-zoom-implemented-streaming-log-ingestion-and-efficient-gdpr-deletes-using-apache-hudi-on-amazon-emr/) | EMR, Apache Hudi            |
+| How AWS Payments migrated from Redash to Amazon Redshift Query Editor v2                                        | Blogpost | 2 Hours  | [Link](https://aws.amazon.com/blogs/big-data/how-aws-payments-migrated-from-redash-to-amazon-redshift-query-editor-v2/)                        | Amazon Redshift             |
+| How GoDaddy built a data mesh to decentralize data ownership using AWS Lake Formation                           | Blogpost | 2 Hours  | [Link](https://aws.amazon.com/blogs/big-data/how-godaddy-built-a-data-mesh-to-decentralize-data-ownership-using-aws-lake-formation/)          | AWS Lakeformation           |
+| TrueBlue uses Amazon QuickSight to deliver more accurate pricing and grow business                              | Blogpost | 2 Hours  | [Link](https://aws.amazon.com/blogs/big-data/trueblue-uses-amazon-quicksight-to-deliver-more-accurate-pricing-and-grow-business/)             | Amazon QuickSight           |
+| Getting Started with the Industrial Data Platform on AWS                                                        | Blogpost | 1 Hour   | [Link](https://aws.amazon.com/blogs/industries/getting-started-with-the-industrial-data-platform-on-aws/)                                     | AWS IoT Sitewise            |
+
+
+### Day 12
+
+| Content                                               | Type               | Duration | Link                                                                                                                     | Topics Covered       |
+|-------------------------------------------------------|--------------------|----------|--------------------------------------------------------------------------------------------------------------------------|----------------------|
+| Data Lake Proserve Offerings                          | Watch              | 1 Hour   | [Link](https://broadcast.amazon.com/videos/674582)                                                                       | Proserve Offerings   |
+| Data Lake Proserve Offerings                          | Read               | 2 Hours  | [Link](https://confluencedc.tsd.proserve.aws.dev/pages/viewpage.action?pageId=1705460)                                  | Proserve Offerings   |
+| Proserve Offerings                                    | Read               | 2 Hours  | [Link](https://w.amazon.com/bin/view/Proserve/ANZ/ETIP/D&A)                                                              | Proserve Offerings   |
+| AWS data.all - Getting Started Workshop               | Workshop - Optional| 2 Hours  | [Link](https://catalog.us-east-1.prod.workshops.aws/workshops/ab79ad6c-13fd-434a-ba44-9783ef2bd879/en-US)               | Data.all             |
+| Data.all - Overview and Architecture                  | Read - Optional    | 30 Min   | [Link](https://data-dot-all.github.io/dataall/)                                                                          | Data.all             |
+| Checkride Process Overview                            | Watch              | 21 Min   | [Link](https://broadcast.amazon.com/videos/714472)                                                                       | Checkride Process    |
+
