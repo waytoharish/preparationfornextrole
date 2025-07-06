@@ -1,70 +1,57 @@
 # Gitlab SSH Key setup
 
-1. ✅ Step 1: Open Git Bash (or any terminal that supports SSH)
+**1. ✅ Step 1: Open Git Bash (or any terminal that supports SSH)**
 If you don't have Git Bash installed, download it here:
 👉 https://git-scm.com/downloads
 
 After installing, right-click on your desktop or open Start Menu → Search “Git Bash” → Open it.
 
-2. ✅ Step 2: Generate SSH Key
+**2. ✅ Step 2: Generate SSH Key**
 In Git Bash, run this command (replace your email):
 
-bash
-Copy
-Edit
+```bash
+
 ssh-keygen -t ed25519 -C "your_email@example.com"
 If you get an error about ed25519 being unsupported, use this instead:
 
-bash
-Copy
-Edit
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 You will see prompts:
 
-bash
-Copy
-Edit
 Enter file in which to save the key (/c/Users/yourname/.ssh/id_ed25519):
 👉 Press Enter to accept the default path.
 
-bash
-Copy
-Edit
 Enter passphrase (empty for no passphrase):
 👉 Optional: Type a passphrase, or press Enter twice to leave it empty.
 
 You’ll get confirmation like:
 
-swift
-Copy
-Edit
 Your identification has been saved in /c/Users/YourName/.ssh/id_ed25519
 Your public key has been saved in /c/Users/YourName/.ssh/id_ed25519.pub
-✅ Step 3: Start the SSH Agent
+```
+
+**3. ✅ Step 3: Start the SSH Agent**
 Still in Git Bash, run:
 
-bash
-Copy
-Edit
+```bash
+
 eval "$(ssh-agent -s)"
 Start the agent if not already running:
 
-bash
-Copy
-Edit
+
 ssh-add ~/.ssh/id_ed25519
 (Or use id_rsa if you chose RSA)
+```
 
-✅ Step 4: Copy the Public Key to Clipboard
+4. ✅ Step 4: Copy the Public Key to Clipboard
 Run this command to copy:
 
-bash
-Copy
-Edit
+```bash
+
 clip < ~/.ssh/id_ed25519.pub
+```
 Now your public SSH key is in your clipboard.
 
-✅ Step 5: Add SSH Key to GitLab
+5. ✅ Step 5: Add SSH Key to GitLab
 Go to GitLab: https://gitlab.com/
 
 Sign in to your account.
@@ -79,7 +66,7 @@ Add a Title like “Windows Laptop SSH” and optionally set an expiration date.
 
 Click Add key.
 
-✅ Step 6: Test the SSH Connection
+6. ✅ Step 6: Test the SSH Connection
 In Git Bash, run:
 
 bash
@@ -108,7 +95,7 @@ git remote set-url origin git@gitlab.com:username/repository.git
 
 # Explanation of gitlab to local Connection
 
-🔑 1. You Generated SSH Keys
+1. 🔑 1. You Generated SSH Keys
 When you ran ssh-keygen, two files were created:
 
 File	Type	Purpose
