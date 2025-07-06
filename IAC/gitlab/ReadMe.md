@@ -1,12 +1,12 @@
 # Gitlab SSH Key setup
 
-✅ Step 1: Open Git Bash (or any terminal that supports SSH)
+1. ✅ Step 1: Open Git Bash (or any terminal that supports SSH)
 If you don't have Git Bash installed, download it here:
 👉 https://git-scm.com/downloads
 
 After installing, right-click on your desktop or open Start Menu → Search “Git Bash” → Open it.
 
-✅ Step 2: Generate SSH Key
+2. ✅ Step 2: Generate SSH Key
 In Git Bash, run this command (replace your email):
 
 bash
