@@ -131,9 +131,9 @@ Verify:
     
 
     
-Step by Step Commands:
+#### Step by Step Commands:
 
-    
+ ```bash   
 # 1. Create Thing
 aws iot create-thing --thing-name "MySmartBulb"
 
@@ -147,7 +147,7 @@ aws iot attach-policy --policy-name "BulbPolicy" --target "arn:aws:iot:..."
 aws iot attach-thing-principal --thing-name "MySmartBulb" --principal "arn:aws:iot:..."
 
 Example
-```bash
+
 
 Relationship Flow:
 [Thing] ← attached to → [Certificate] ← attached to → [Policy]
@@ -186,4 +186,145 @@ Policy example
 }
 
 ```
+
+# AWS Fleetwise onboarding 
+
+### AWS Setup:
+
+```bash    
+# 1. Create Vehicle (Thing)
+aws iot create-thing --thing-name "MyVehicle"
+
+# 2. Create & Register Certificates
+aws iot create-keys-and-certificate
+aws iot attach-thing-principal
+
+# 3. Create FleetWise Vehicle
+aws iotfleetwise create-vehicle \
+    --vehicle-name "MyVehicle"
+
+ ```   
+
+    
+### Signal Catalog Setup:
+
+ ```json   
+{
+    "name": "vehicle-signal-catalog",
+    "nodes": [
+        {
+            "branch": {
+                "fullyQualifiedName": "Vehicle",
+                "description": "Vehicle Signals"
+            }
+        },
+        {
+            "sensor": {
+                "fullyQualifiedName": "Vehicle.Speed",
+                "dataType": "DOUBLE"
+            }
+        }
+    ]
+}
+```
+    
+
+    
+### Vehicle Model:
+
+``bash    
+# Define vehicle model
+aws iotfleetwise create-decoder-manifest
+aws iotfleetwise create-vehicle-model
+``
+    
+
+    
+### On Vehicle Setup:
+
+    
+1. Install FleetWise Agent on TCU:
+   - Configure credentials
+   - Set endpoint
+   - Configure CAN bus interfaces
+
+2. Configure Data Collection:
+   - Signal mappings
+   - Collection schemes
+   - Upload rules
+
+    
+
+    
+###  Campaign Setup:
+
+`bash    
+# Create campaign for data collection
+aws iotfleetwise create-campaign \
+    --name "MyDataCollection" \
+    --signal-catalog-arn "arn:..." \
+    --target-arn "arn:..."
+`
+    
+
+    
+## Complete Flow:
+
+`bash    
+[Vehicle Hardware]
+        ↓
+[Install FW Agent on TCU]
+        ↓
+[AWS IoT Core Setup]
+        ↓
+[Signal Catalog Definition]
+        ↓
+[Vehicle Model Creation]
+        ↓
+[Campaign Creation]
+        ↓
+[Data Collection Starts]
+
+`  
+
+    
+### Key Components to Configure:
+
+1. Vehicle Registration
+2. Signal Catalog
+3. Decoder Manifest
+4. Vehicle Model
+5. FleetWise Agent
+6. Collection Schemes
+7. Campaigns
+
+
+# Overall Setup 
+
+### One time setup ( Fleet level)
+1. Signal Catalog Definition
+2. Vehicle Model Creation
+3. Decoder Manifest
+4. Collection Schemes (base templates)
+
+
+### Pervehicle Setup 
+1. Vehicle Registration:
+   aws iot create-thing --thing-name "Vehicle123"
+   aws iotfleetwise create-vehicle --vehicle-name "Vehicle123"
+
+2. Certificate Creation & Assignment:
+   
+   aws iot create-keys-and-certificate
+   aws iot attach-thing-principal
+
+4. FleetWise Agent Installation on TCU:
+   - Install agent
+   - Configure certificates
+   - Set endpoint
+   - Configure CAN mappings
+
+5. Associate Vehicle with Model:
+   
+   aws iotfleetwise associate-vehicle-fleet
 
