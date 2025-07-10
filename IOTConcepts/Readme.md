@@ -328,3 +328,50 @@ aws iotfleetwise create-campaign \
    
    aws iotfleetwise associate-vehicle-fleet
 
+# Relation between Thing and Vehicle
+
+```bash
+# 1. Create Thing
+aws iot create-thing --thing-name "MyThing123"
+
+# 2. Create Certificate
+aws iot create-keys-and-certificate --set-as-active
+    # This generates:
+    # - Certificate
+    # - Private key
+    # - Certificate ARN
+
+# 3. Create Vehicle
+aws iotfleetwise create-vehicle --vehicle-name "Vehicle456"
+
+# 4. The actual mapping happens in FleetWise Agent Configuration:
+{
+    "endpoint": "xxxxx.iot.region.amazonaws.com",
+    "thing_name": "MyThing123",        # <-- This is where mapping happens
+    "vehicle_name": "Vehicle456",
+    "certificate_path": "/path/to/cert.pem",
+    "private_key_path": "/path/to/private.key"
+}
+
+    
+
+    
+The Connection Flow:
+
+    
+[FleetWise Agent]
+      ↓
+Uses Thing name ("MyThing123") for IoT Core connection
+      ↓
+Uses Vehicle name ("Vehicle456") for FleetWise data mapping
+
+    
+
+    
+Think of it as:
+
+Thing name = Login credential
+Vehicle name = Profile identifier
+The Agent configuration ties them together
+
+```
