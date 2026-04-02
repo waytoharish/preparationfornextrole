@@ -1,0 +1,39 @@
+from airflow import DAG
+from airflow.decorators import task
+from airflow.operators.trigger_dagrun import TriggerDagRunOperator
+from datetime import datetime
+
+with DAG(
+    dag_id="parent_dag",
+    start_date=datetime(2024, 1, 1),
+    schedule=None,
+    catchup=False,
+    tags=["example"],
+) as dag:
+
+    # Step 1: Read JSON / prepare list of tables
+    @task
+    def read_tables():
+        # Replace this with actual JSON read (S3 / file / DB)
+        return ["table1", "table2", "table3"]
+
+    # Step 2: Prepare inputs for dynamic triggering
+    @task
+    def prepare_trigger_inputs(tables):
+        return [
+            {
+                "run_id": f"run_{table}_{datetime.utcnow().strftime('%Y%m%dT%H%M%S')}",
+                "conf": {"table_name": table}
+            }
+            for table in tables
+        ]
+
+    tables = read_tables()
+    trigger_inputs = prepare_trigger_inputs(tables)
+
+    # Step 3: Dynamically trigger child DAGs
+    trigger_child = TriggerDagRunOperator.partial(
+        task_id="trigger_child_dag",
+        trigger_dag_id="child_dag",
+        wait_for_completion=False,   # set True if you want blocking behavior
+    ).expand_kwargs(trigger_inputs)
